@@ -67,11 +67,15 @@ class MyCustomFormState extends State<RegisterForm>{
                 obscureText: true,
                 onSaved: (value) => print(value),
                 validator: (value){
-                  this.password_1 = value;
+                  this.password_2 = value;
                   if(value.isEmpty){
+                    
                     return "กรุณาระบุข้อมูลให้ครบถ้วน";
                   }
                   if(password_1 != password_2){
+                    print(password_1);
+                    
+                    print(password_2);
                     return "รหัสผ่านไม่ตรงกัน";
                   }
                 },
