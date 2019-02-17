@@ -59,7 +59,7 @@ class HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.explore),
-            title: Text("map")
+            title: Text("Map")
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
